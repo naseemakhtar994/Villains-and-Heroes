@@ -21,8 +21,8 @@ public class MainPresenter extends AbsPresenter<MainContract.View> implements Ma
     private String mAttribution;
     private boolean mHasMore;
 
-    public MainPresenter() {
-        mMarvelApi = MarvelApi.getInstance();
+    public MainPresenter(@NonNull MarvelApi marvelApi) {
+        mMarvelApi = marvelApi;
         mEntries = new ArrayList<>();
     }
 

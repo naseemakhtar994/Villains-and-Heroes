@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.andremion.heroes.R;
+import com.andremion.heroes.api.MarvelApi;
 import com.andremion.heroes.api.MarvelException;
 import com.andremion.heroes.api.data.CharacterVO;
 import com.andremion.heroes.databinding.ActivityMainBinding;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity
         mPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
         if (savedInstanceState == null) {
-            mPresenter = new MainPresenter();
+            mPresenter = new MainPresenter(MarvelApi.getInstance());
         } else {
             mPresenter = (MainPresenter) getLastCustomNonConfigurationInstance();
         }
