@@ -44,6 +44,8 @@ dependencies {
 
     testCompile "junit:junit:$junitVersion"
     testCompile "org.mockito:mockito-core:$mockitoVersion"
+    testCompile "org.powermock:powermock-module-junit4:$powermockVersion"
+    testCompile "org.powermock:powermock-api-mockito:$powermockVersion"
 
     androidTestCompile "com.android.support:support-annotations:$supportLibraryVersion"
     androidTestCompile 'com.android.support.test:rules:0.5'

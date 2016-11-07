@@ -26,6 +26,7 @@ allprojects {
         junitVersion = '4.12'
         espressoVersion = '2.2.+'
         mockitoVersion = '2.2.+'
+        powermockVersion = '1.6.4'
     }
 }
 

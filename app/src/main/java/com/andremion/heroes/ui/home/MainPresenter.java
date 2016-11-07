@@ -27,8 +27,7 @@ public class MainPresenter extends AbsPresenter<MainContract.View> implements Ma
     }
 
     @Override
-    public void attachView(@NonNull MainContract.View view) {
-        super.attachView(view);
+    public void initScreen() {
         if (!mView.showInfoDialog()) {
             if (mEntries.isEmpty()) {
                 loadCharacters(0);

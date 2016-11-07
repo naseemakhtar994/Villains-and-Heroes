@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity
             mPresenter = (MainPresenter) getLastCustomNonConfigurationInstance();
         }
         mPresenter.attachView(this);
+        mPresenter.initScreen();
     }
 
     @Override
